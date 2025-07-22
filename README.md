@@ -52,3 +52,21 @@ Pull all the changes from the remote directory.
 Set an email which will be associated with the commits made to the repository.
 • git config --global user.name "user name"
 Set a user name which will be associated with the commits made to the repository.
+
+History Commands
+    • git revert <commit hash>
+Undo a commit using its hash.
+    • git reset <file>
+Remove a file from the staging area, without modifying anything in the local directory.
+    • git reset --hard <commit hash>
+Permanently revert back to a previous commit.
+    • git checkout <commit hash>
+Temporarily transform your working directory into the state it was in at the time of the specified commit.
+    • git reset --hard HEAD~2
+Permanently revert the last two commits.
+    • git clean -n
+Perform a “dry run” of the clean command to see which files will be removed.
+    • git clean -f
+Remove untracked files from the working directory.
+    • git rm -r <file or directory name>
+Remove/untrack a file or directory from GIT.
